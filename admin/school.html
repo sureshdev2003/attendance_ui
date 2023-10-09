@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>school</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="school.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="header">
+        <h2> SCHOOL ATTENDENCE</h2>
+
+    </div>
+
+<div class="sidenav">
+    <button class="dropdown-btn">Student details
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="sclsdt.html">+ Add Student</a>
+        <a href="#">Attendance</a>
+      </div>
+     <a href="#services">Services</a>
+     <a href="#clients">Admin details</a>
+     <button class="dropdown-btn">dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="index.html" target="_top">+ Add Student</a>
+    <a href="#">Link 2</a>
+  </div>
+  <a  href="#contact">feeback</a>
+</div>
+
+<div class="main">
+  
+</div>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html> 

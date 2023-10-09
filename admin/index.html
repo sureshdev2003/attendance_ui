@@ -1,0 +1,73 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button">
+                <div id="btn"></div>
+                <button type="button" class="color-btn" onclick="login()">Login</button>
+                <button type="button" class="color-btn" onclick="register()">Register</button>
+            </div>
+         
+            <form id="login"class="input-group" action="dashboard.html" method="post">
+                <h2 class="heading">Attendance </h2><h2 class="heading-1" >Managemant</h2> <h2 class="heading-2">System</h2>
+                <input type="text" class="input-text" placeholder="Student ID or Admin ID">
+                <input type="email" class="input-text" placeholder="Email ID">
+                <input type="password" class="input-password" placeholder=" Enter password">
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <form id="register" class="input-register" action="">
+                <input type="text" class="inputtext" placeholder="Your Name">
+                <input type="email" class="inputtext" placeholder="Email ID">
+                <input type="text" class="inputtext" placeholder="Phone Number">
+                <input type="text" class="inputtext" placeholder="Institude Name"><br>
+                <input type="radio" class="school" id="school" name="choose" value="school">
+				<label for="school">School</label><br>
+				<input type="radio" class="college" id="college" name="choose" value="college">
+				<label for="college">college</label><br>
+				<input type="radio" class="office" id="office" name="choose" value="office">
+				<label for="office">Office</label>
+                <input type="text" class="inputtext" placeholder="Admin ID">
+                <input type="password" class="inputtext" placeholder=" Enter password">
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+
+
+          
+
+
+
+
+    </script>
+    
+   </body>
+   </html>
